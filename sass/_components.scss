@@ -197,3 +197,46 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+/////////////////////////////////////////
+// GALLERY
+.gallery {
+    display: flex;
+
+    &__item {
+    }
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+/////////////////////////////////////////
+// OVERVIEW
+.overview {
+    display: flex;
+    &__heading {
+    }
+
+    &__stars {
+        // Very important tricks to do 2 out of 4 items side by side
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__rating {
+    }
+
+    &__rating-average {
+    }
+
+    &__rating-count {
+    }
+}
