@@ -20,6 +20,15 @@
     --line: 1px solid var(--color-grey-light-2);
 }
 
+// SASS variables for Breakpoint
+// We could write CSS variables here but CSS variables do not work for screen size in media queries
+$bp-largest: 75em; // 75em = 1200px; 1200px/16px = 75em
+$bp-large: 68.75em; // 68.75em = 1100px; 1100px/16px = 68.75em
+$bp-medium: 56.25em; // 56.25em = 900px; 900px/16px = 56.25em
+$bp-small: 37.5em; // 37.5em = 600px; 600px/16px = 37.5em
+$bp-smallest: 31.25em; // 31.25em = 500px; 500px/16px = 31.25em
+$bp-phone: 26.25em; // 26.25em = 420px; 420px/16px = 26.25em
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +43,14 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; // 1rem = 8px, 8px/16px = 50%
+    }
+
+    @media only screen and (max-width: $bp-phone) {
+        font-size: 43.75%; // 1rem = 7px, 7px/16px = 43.75%
+    }
 }
 
 body {
