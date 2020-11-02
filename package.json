@@ -11,7 +11,7 @@
         "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
         "build:css": "npm-run-all compile:sass compress:css"
     },
-    "author": "Jonas",
+    "author": "Asif",
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^10.0.0",
